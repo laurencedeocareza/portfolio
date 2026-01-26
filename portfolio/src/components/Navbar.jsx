@@ -28,9 +28,9 @@ function Navbar() {
     `transition-colors px-1 ${active === id ? "text-blue-400 border-b-2 border-blue-400" : "hover:text-blue-400"}`;
 
   return (
-    <nav className="sticky top-0 z-50 flex justify-between items-center p-6 bg-transparent border-b">
-      <div className="text-xl font-bold text-orange-300">
-        Laurence Jade Deocareza
+    <nav className="sticky top-0 z-50 flex justify-between items-center p-8 bg-black">
+      <div className="text-3xl font-bold text-orange-300 bungee-regular">
+        Laurence
       </div>
       <ul className="flex gap-6 list-none m-0">
         <li>
