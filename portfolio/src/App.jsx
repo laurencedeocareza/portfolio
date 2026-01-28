@@ -1,5 +1,10 @@
 import Navbar from "./components/Navbar";
-import profileImage from "./image/profile.jpg";
+import {
+  github as githubIcon,
+  profile as profileImage,
+  linkedin as linkedinIcon,
+} from "./image/icon";
+import IconButton from "./components/iconbutton";
 
 function App() {
   return (
@@ -23,13 +28,55 @@ function App() {
                   Welcome to my portfolio website! I am passionate about
                   creating beautiful and functional web applications.
                 </p>
+
+                <div className="mt-6 flex gap-3">
+                  <IconButton
+                    href="https://github.com/laurencedeocareza"
+                    label="GitHub"
+                    size={48}
+                    bg="#111827"
+                    hoverBg="#1f2937"
+                    iconColor="#e5e7eb"
+                    icon={
+                      <img
+                        src={githubIcon}
+                        alt="GitHub"
+                        style={{
+                          width: "100%",
+                          height: "100%",
+                          objectFit: "contain",
+                        }}
+                      />
+                    }
+                  />
+
+                  <IconButton
+                    href="https://www.linkedin.com/in/deocareza-laurence-jade-a-038400363/"
+                    label="Linkedin"
+                    size={48}
+                    bg="#111827"
+                    hoverBg="#1f2937"
+                    iconColor="#e5e7eb"
+                    icon={
+                      <img
+                        src={linkedinIcon}
+                        alt="Linkedin"
+                        style={{
+                          width: "100%",
+                          height: "100%",
+                          objectFit: "contain",
+                        }}
+                      />
+                    }
+                  />
+                </div>
               </div>
               <div className="md:w-1/2" />
               <div className="mt-8 md:mt-0">
                 <img
                   src={profileImage}
                   alt="Profile"
-                  className="w-64 h-64 object-cover mx-auto"
+                  className="w-80 h-80 md:w-96 md:h-96 object-cover mx-auto"
                 />
               </div>
             </div>
